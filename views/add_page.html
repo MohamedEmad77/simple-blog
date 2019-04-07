@@ -1,0 +1,13 @@
+<article class="twoThirds">
+<h1>Add</h1>
+<?php 
+	if (!empty($error)) {
+		echo '<p class="error">'. $error.'</p>';
+	}
+?>
+<form action="./add_page.php" method="post">
+	Title: <input type="text" name="title" required>
+	Content: <textarea name="content" required></textarea>
+	<input type="submit" name="submit" value="Add Page">
+</form>
+</article>
